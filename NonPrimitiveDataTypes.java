@@ -22,5 +22,22 @@ public class NonPrimitiveDataTypes {
         thisByte = null;
         
         System.out.println(thisByte);
+
+        // primitive to non primitive with same data type
+        
+        int thisInt = 100;
+        Integer thisInt2 = thisInt;
+
+        int intAgain = thisInt2;
+        
+        // non-primitive to primitive with different data type
+        short shortAge = thisInt2.shortValue();
+        byte byteAge = thisInt2.byteValue();
+        String stringAge = thisInt2.toString();
+
+        System.out.println(shortAge);
+        System.out.println(byteAge);
+        System.out.println(stringAge);
+
     }
 }
